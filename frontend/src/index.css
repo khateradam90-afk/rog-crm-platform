@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-gold-50: #fdfbf3;
+  --color-gold-100: #faf6e7;
+  --color-gold-200: #f4ecce;
+  --color-gold-300: #efdfa8;
+  --color-gold-400: #e9cc73;
+  --color-gold-500: #d4a642;
+  --color-gold-600: #b8931c;
+  --color-gold-700: #997a1a;
+  --color-gold-800: #7a6116;
+  --color-gold-900: #5d4910;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-gold-50 { @apply bg-[#fdfbf3]; }
+.bg-gold-100 { @apply bg-[#faf6e7]; }
+.bg-gold-200 { @apply bg-[#f4ecce]; }
+.bg-gold-300 { @apply bg-[#efdfa8]; }
+.bg-gold-400 { @apply bg-[#e9cc73]; }
+.bg-gold-500 { @apply bg-[#d4a642]; }
+.bg-gold-600 { @apply bg-[#b8931c]; }
+.bg-gold-700 { @apply bg-[#997a1a]; }
+.bg-gold-800 { @apply bg-[#7a6116]; }
+.bg-gold-900 { @apply bg-[#5d4910]; }
+
+.text-gold-50 { @apply text-[#fdfbf3]; }
+.text-gold-100 { @apply text-[#faf6e7]; }
+.text-gold-200 { @apply text-[#f4ecce]; }
+.text-gold-300 { @apply text-[#efdfa8]; }
+.text-gold-400 { @apply text-[#e9cc73]; }
+.text-gold-500 { @apply text-[#d4a642]; }
+.text-gold-600 { @apply text-[#b8931c]; }
+.text-gold-700 { @apply text-[#997a1a]; }
+.text-gold-800 { @apply text-[#7a6116]; }
+.text-gold-900 { @apply text-[#5d4910]; }
+
+.border-gold-50 { @apply border-[#fdfbf3]; }
+.border-gold-100 { @apply border-[#faf6e7]; }
+.border-gold-200 { @apply border-[#f4ecce]; }
+.border-gold-300 { @apply border-[#efdfa8]; }
+.border-gold-400 { @apply border-[#e9cc73]; }
+.border-gold-500 { @apply border-[#d4a642]; }
+.border-gold-600 { @apply border-[#b8931c]; }
+.border-gold-700 { @apply border-[#997a1a]; }
+.border-gold-800 { @apply border-[#7a6116]; }
+.border-gold-900 { @apply border-[#5d4910]; }
+
+.ring-gold-500 { @apply ring-[#d4a642]; }
+.ring-gold-600 { @apply ring-[#b8931c]; }
+
+focus\:ring-gold-500:focus { @apply ring-[#d4a642]; }
+focus\:ring-gold-600:focus { @apply ring-[#b8931c]; }
+
+/* Smooth transitions */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gold-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gold-500;
+}
